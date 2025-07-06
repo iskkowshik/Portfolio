@@ -1,0 +1,66 @@
+.education-section {
+  padding: 4rem 1rem;
+}
+
+/* Apply home-style gradient background only to cards */
+.education-card {
+  background: linear-gradient(135deg, rgba(173, 216, 255, 0.85), rgba(204, 179, 255, 0.85));
+  backdrop-filter: blur(12px);
+  border-radius: 1.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 12px 20px rgba(0, 123, 255, 0.12);
+}
+
+/* Card hover effect */
+.education-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 28px rgba(0, 123, 255, 0.2);
+}
+
+/* Icon in card */
+.education-card .fs-2 {
+  color: #0d6efd;
+}
+
+/* Headings and text */
+.education-card h5 {
+  font-size: 1.2rem;
+  color: #212529;
+}
+
+.education-card p {
+  font-size: 0.95rem;
+  color: #495057;
+}
+
+/* Gradient title */
+.gradient-text {
+  background: linear-gradient(90deg, #007bff, #6610f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Grade badge with soft orange tone */
+.grade-badge {
+  background-color: #ffe6cc;
+  color: #a35400;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(255, 140, 0, 0.2);
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gradient-text {
+    font-size: 2rem;
+  }
+
+  .education-card {
+    padding: 1.5rem;
+  }
+}

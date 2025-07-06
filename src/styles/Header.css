@@ -1,0 +1,22 @@
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .nav-link:hover {
+  color: #ffd700 !important; /* golden */
+  transform: translateY(-1px);
+}
+
+/* Active route styling */
+.navbar .nav-link.active {
+  color: #ffd700 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #ffd700;
+}

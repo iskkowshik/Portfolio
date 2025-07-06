@@ -1,0 +1,86 @@
+/* === Glass Card for Skills === */
+.skill-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 14px 28px rgba(0, 123, 255, 0.25);
+  border-color: #007bff;
+}
+
+.skill-card h5 {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* === Gradient Heading === */
+.gradient-text {
+  background: linear-gradient(90deg, #007bff, #6610f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+/* === Technical & Soft Skill Badges === */
+.tech-badge {
+  background: linear-gradient(135deg, #e0f7ff, #f3e5f5);
+  color: #333;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+  background: linear-gradient(135deg, #d0ebff, #e3d1f3);
+  color: #000;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+}
+
+.soft-badge {
+  background: linear-gradient(135deg, #ffe0ec, #fff4e6);
+  color: #444;
+}
+
+.soft-badge:hover {
+  background: linear-gradient(135deg, #ffcfe0, #ffeacc);
+  color: #000;
+}
+
+/* === Responsive Typography Adjustments === */
+@media (max-width: 768px) {
+  .skill-card {
+    padding: 1.2rem;
+  }
+
+  .gradient-text {
+    font-size: 1.75rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
