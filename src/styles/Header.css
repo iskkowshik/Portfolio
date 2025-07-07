@@ -6,7 +6,8 @@
   color: white !important;
   position: relative;
   transition: all 0.3s ease-in-out;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.75rem; /* slightly reduced for mobile friendliness */
+  display: inline-block;
 }
 
 .navbar .nav-link:hover {
@@ -19,4 +20,11 @@
   color: #ffd700 !important;
   font-weight: 600;
   border-bottom: 2px solid #ffd700;
+}
+
+/* Optional: Fix text alignment on mobile when collapsed */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    text-align: center;
+  }
 }

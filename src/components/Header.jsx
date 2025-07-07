@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // ✅ Important for toggle to work
 import '../styles/Header.css';
 
 const Header = () => {
@@ -8,7 +9,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top">
       <div className="container">
         <NavLink className="navbar-brand fw-bold fs-4" to="/">
-         Immanneni Saikowshik
+          Immanneni Saikowshik
         </NavLink>
 
         <button
@@ -24,9 +25,9 @@ const Header = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto text-center">
+          <ul className="navbar-nav ms-auto text-lg-start text-center">
             <li className="nav-item">
-              <NavLink exact="true" className="nav-link fw-semibold" to="/">
+              <NavLink end className="nav-link fw-semibold" to="/">
                 Home
               </NavLink>
             </li>
