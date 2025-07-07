@@ -5,6 +5,7 @@ const projects = [
   {
     title: 'Patient Pulse – Online Doctor Appointment',
     description: `Built a full-stack healthcare web application using React, Node.js, Express, and MongoDB, deployed on AWS. The platform enables users to book doctor appointments, securely log in using JWT authentication, and manage personal health records. Key features include dynamic doctor filtering, real-time notifications, and emergency medical support for rural areas. Designed with a fully responsive UI to ensure smooth user experience across all devices.`,
+    github: 'https://github.com/iskkowshik/patient-pulse.git',
     images: [
       '/Screenshot 2024-10-04 102248.png',
       '/Screenshot 2024-10-04 102355.png',
@@ -15,6 +16,7 @@ const projects = [
   {
     title: 'AI-Based College ID Validator',
     description: `Developed a Dockerized image-processing microservice to verify the authenticity of college ID cards using a ResNet-based deep learning model and OCR-driven rule logic. The system detects template mismatches, missing fields, and image forgeries with over 95% accuracy. Built with FastAPI, PyTorch, and OpenCV, it includes robust REST APIs for validation, health checks, and versioning. The solution runs securely offline in containerized environments and is tested against 50+ real and fake ID scenarios, enhancing reliability and scalability in real-world deployments.`,
+    github: 'https://github.com/iskkowshik/AI-ID-Validator.git',
     images: [
       '/Screenshot 2025-05-26 172041.png',
       '/Screenshot 2025-05-26 172050.png',
@@ -36,6 +38,17 @@ const Projects = () => {
           <div key={index} className="mb-5">
             <h4 className="text-primary fw-bold mb-2">{project.title}</h4>
             <p className="project-description">{project.description}</p>
+
+            {/* GitHub link */}
+            <a 
+              href={project.github} 
+              className="btn btn-dark mb-3" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github me-2"></i>
+              View on GitHub
+            </a>
 
             <div className="row g-3">
               {project.images.map((img, i) => (
