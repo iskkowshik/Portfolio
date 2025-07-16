@@ -21,8 +21,7 @@ const Home = () => {
           Hey there, I'm <span className="text-primary">Immanneni Saikowshik</span>
         </h1>
         <p className="lead mb-4" style={{ color: '#1a1a1a' }}>
-  A curious mind with a builder’s spirit — I thrive on turning real-world challenges into impactful solutions.
-  From winning contests to deploying production-grade systems, I believe in learning fast, building bold, and delivering value.
+  A 4th-year Computer Science student at Vasavi College of Engineering with a builder’s spirit and a passion for solving real-world problems. From winning national DSA contests to deploying scalable AI and full-stack systems, I thrive on learning fast, building bold, and delivering real impact.
 </p>
 
 
