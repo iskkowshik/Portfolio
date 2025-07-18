@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# 💼 Saikowshik's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my developer portfolio — a curated showcase of my projects, skills, achievements, and resume. Built with React.js and Tailwind CSS, this fully responsive web application highlights the work I've done in AI, full-stack development, and open-source contributions.
 
-## Available Scripts
+🌐 **Live Site**: [portfolio-ukv3.vercel.app](https://portfolio-ukv3.vercel.app)
 
-In the project directory, you can run:
+📂 **Directory Structure**
+```
+portfolio/
+├── public/
+│   └── assets/         # Project images, resume PDF, favicon, etc.
+├── src/
+│   ├── components/     # Reusable components (Navbar, ProjectCard, etc.)
+│   ├── data/           # Skills, Projects, Experience, etc. as JSON/JS
+│   ├── pages/          # Sections like About, Projects, Skills
+│   ├── App.jsx         # Root component
+│   └── index.js        # Entry point
+├── tailwind.config.js  # Tailwind customization
+└── package.json        # Dependencies and scripts
+```
 
-### `npm start`
+🖼️ **Featured Projects**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔬 AI-based College ID Validator
+> Validates ID card authenticity using OCR, image classification, and ResNet50. Deployed as a FastAPI backend + Dockerized microservice.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🏥 Patient Pulse - Online Appointment System
+> MERN Stack platform to book doctor appointments. Features dynamic filters, email alerts, and secure authentication.
 
-### `npm test`
+📱 **Responsive Design**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Mobile-first UI
+- Tailwind grid layout
+- Custom animations using Framer Motion
 
-### `npm run build`
+🧑‍💻 **Tech Stack**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React.js, Tailwind CSS, Framer Motion
+- **Deployment**: Vercel
+- **Additional Tools**: GitHub Actions, Figma for UI design
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📄 **Resume**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Click on the "Resume" tab in the navbar or [Download here](https://portfolio-ukv3.vercel.app/assets/resume.pdf)
 
-### `npm run eject`
+🛠️ **Running Locally**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/iskkowshik/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🔍 **Screenshots**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Home Page                          | Skills Section                      |
+|-----------------------------------|-------------------------------------|
+| ![](public/assets/home.png)       | ![](public/assets/skills.png)       |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| Projects Section                   | Contact Form                        |
+|-----------------------------------|-------------------------------------|
+| ![](public/assets/projects.png)   | ![](public/assets/contact.png)      |
 
-## Learn More
+🪪 **License**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is licensed under the [MIT License](LICENSE).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 👨‍💼 Maintainer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Saikowshik Immanneni**
 
-### Analyzing the Bundle Size
+- 📧 Email: [kowshiksaikowshik696@gmail.com](mailto:kowshiksaikowshik696@gmail.com)  
+- 🔗 GitHub: [@iskkowshik](https://github.com/iskkowshik)  
+- 💼 LinkedIn: [Saikowshik Immanneni](https://www.linkedin.com/in/kowshik-saikowshik-063619264)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+PRs are welcome to improve the UI, add new project sections, or enhance animations.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Let me know if you'd like badges, GitHub stars, or workflow integrations too 😘
