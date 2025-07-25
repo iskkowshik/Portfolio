@@ -74,7 +74,7 @@ const Skills = () => {
 
       {/* ✅ Soft Skills (No glass-card) */}
       <h4 className="text-secondary fw-semibold mt-5 mb-3">Soft Skills</h4>
-      <div className="p-4 shadow-sm text-center">
+      <div className="skill-card p-4 shadow-sm text-center">
         <h5 className="text-primary fw-bold mb-3">Soft Skills</h5>
         <div className="d-flex flex-wrap justify-content-center gap-2">
           {softSkills.split(',').map((skill, idx) => (

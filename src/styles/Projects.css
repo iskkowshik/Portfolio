@@ -1,9 +1,15 @@
 /* 🌈 Section Background & Header */
 .projects-section {
-  background: linear-gradient(135deg, #f3f6fc, #e9f0fb);
+  background: linear-gradient(135deg, #c3cfe2, #f5f7fa);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   min-height: 100vh;
+  padding: 3rem 2rem;
 }
 
+/* 🎨 Gradient Heading Text */
 .gradient-text {
   background: linear-gradient(to right, #007bff, #00c6ff);
   -webkit-background-clip: text;
@@ -35,7 +41,11 @@
   border-radius: 12px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 200px; /* Consistent height */
+  height: 200px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .project-img {

@@ -1,7 +1,15 @@
 .experience-section-bg {
-  background: linear-gradient(135deg, #f3f4f7, #dce4ed);
+    background: linear-gradient(135deg, #c3cfe2, #f5f7fa); /* same gradient */
+  background-blend-mode: overlay; /* this works only if another background layer like an image is present */
+  backdrop-filter: blur(10px);  /* 👈 main glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  min-height: 100vh;
+  padding: 4rem 2rem;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .gradient-text {
@@ -114,8 +122,4 @@
   display: block;
 }
 /* Experience.css */
-.experience-section-bg {
-  background: linear-gradient(135deg, #f0f4f8, #e6f0ff);
-  position: relative;
-  z-index: 1;
-}
+
