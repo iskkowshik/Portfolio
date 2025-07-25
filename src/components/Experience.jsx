@@ -3,10 +3,10 @@ import '../styles/Experience.css';
 import { FaServer, FaBrain, FaDocker, FaEye, FaMicrochip } from 'react-icons/fa';
 
 const images = [
-  '/image-53 (1).png',
-  '/WhatsApp Image 2025-05-22 at 15.19.53_6cb47bfe.jpg',
-  '/WhatsApp Image 2025-05-22 at 15.25.43_dd699aa7.jpg',
-  '/WhatsApp Image 2025-05-22 at 15.50.24_8a0b619a.jpg'
+  process.env.PUBLIC_URL + '/image-53 (1).png',
+  process.env.PUBLIC_URL + '/WhatsApp Image 2025-05-22 at 15.19.53_6cb47bfe.jpg',
+  process.env.PUBLIC_URL + '/WhatsApp Image 2025-05-22 at 15.25.43_dd699aa7.jpg',
+  process.env.PUBLIC_URL + '/WhatsApp Image 2025-05-22 at 15.50.24_8a0b619a.jpg'
 ];
 
 const techIcons = [
@@ -31,7 +31,7 @@ const Experience = () => {
           Using a <strong>ResNet-based classifier</strong> and <strong>OCR-driven rule logic</strong>,
           the system detected forgeries, template mismatches, and missing field anomalies with <strong>95%+ accuracy</strong>.
           I deployed it using <strong>FastAPI & Docker</strong>, exposed robust REST APIs, and validated it with
-          <strong>50+ real/fake ID cases</strong>.
+          <strong> 50+ real/fake ID cases</strong>.
         </p>
 
         <div className="tech-icons mb-5 d-flex flex-wrap justify-content-center gap-4">
