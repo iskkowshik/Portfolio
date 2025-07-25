@@ -19,7 +19,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://your-backend-api.com/contact', formData);
+      const response = await axios.post('https://portfolio-backend-ashy-xi.vercel.app/contact', formData);
       alert('Message sent successfully!');
       console.log(response.data);
 
