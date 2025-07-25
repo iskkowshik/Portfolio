@@ -1,22 +1,51 @@
-/* Home Background - Glassy Gradient Matching Contact Card */
+/* 🔥 Gorgeous Glassy Gradient Background */
 .home-section {
-  background: linear-gradient(135deg, rgba(173, 216, 255, 0.85), rgba(204, 179, 255, 0.85));
-  backdrop-filter: blur(12px);
+  background: linear-gradient(135deg, #c3cfe2, #f5f7fa);
+  background-blend-mode: overlay;
   min-height: 100vh;
-  padding: 4rem 1rem;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Profile Styling */
+/* 💬 Faint Giant "hello" Text */
+.home-hello-top {
+  position: absolute;
+  top: 8%;
+  left: 4%;
+  font-size: 9vw;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: 0;
+  pointer-events: none;
+  animation: floatText 10s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+/* 🖼️ Profile Styling */
 .profile-wrapper {
   width: 220px;
   height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
   border: 5px solid #fff;
-  transition: transform 0.4s ease;
-  box-shadow: 0 12px 25px rgba(0, 123, 255, 0.15);
+  box-shadow: 0 12px 25px rgba(0, 123, 255, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1.2s ease both;
 }
 
 .profile-wrapper:hover {
-  transform: scale(1.05);
+  transform: scale(1.06);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
 .profile-img {
@@ -25,10 +54,10 @@
   object-fit: cover;
 }
 
-/* Text Section Animation */
+/* 📝 Text Section with Entrance */
 .text-section {
-  max-width: 650px;
-  animation: fade-in-up 0.8s ease both;
+  max-width: 700px;
+  animation: fade-in-up 0.8s ease-out both;
 }
 
 @keyframes fade-in-up {
@@ -39,5 +68,61 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* 🎨 Text Styling */
+.text-section h1,
+.text-section .lead {
+  color: #1a1a1a;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+/* 💡 Resume Button */
+.btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.5);
+}
+
+/* 🧠 Typography */
+.lead {
+  font-size: 1.125rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* 📱 Responsive Tweaks */
+@media (max-width: 768px) {
+  .home-hello-top {
+    font-size: 12vw;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .text-section {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .profile-wrapper {
+    margin-bottom: 2rem;
   }
 }

@@ -1,88 +1,121 @@
-/* Uniform thumbnail images */
+.experience-section-bg {
+  background: linear-gradient(135deg, #f3f4f7, #dce4ed);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-description {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 💡 Tech Icon Section */
+.tech-icons {
+  gap: 2rem;
+}
+
+.tech-icon-box {
+  text-align: center;
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon-box .icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.tech-icon-box:hover {
+  transform: translateY(-5px);
+}
+
+.tech-icon-box p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #333;
+}
+
+/* 📸 Image Cards */
+.experience-card {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
 .experience-img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+  height: auto;
+  display: block;
 }
 
-.experience-card:hover .experience-img {
-  transform: scale(1.03);
-}
-
-/* Description text */
-.experience-description {
-  font-size: 1.05rem;
-  color: #222;
-  line-height: 1.7;
-}
-
-/* Modal backdrop */
+/* 🔍 Modal */
 .modal-backdrop-custom {
   position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.85);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 5, 5, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1050;
-  padding: 1rem;
+  z-index: 9999;
 }
 
-/* Modal content */
 .modal-content-custom {
-  position: relative;
-  max-width: 90vw;
-  max-height: 90vh;
-  overflow: hidden;
+  max-width: 90%;
+  max-height: 80vh;
+  animation: zoomIn 0.4s ease;
 }
 
 .modal-content-custom img {
-  width: auto;
+  width: 100%;
   height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
   border-radius: 10px;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
 }
 
-/* Close button */
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 14px;
-  background-color: rgba(255, 255, 255, 0.9);
+  top: -10px;
+  right: -10px;
+  background: #fff;
   border: none;
-  font-size: 2rem;
-  color: #333;
+  font-size: 1.5rem;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
   cursor: pointer;
-  z-index: 1060;
-  transition: background 0.3s ease, transform 0.2s ease;
+  padding: 0.3rem 0.6rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.close-btn:hover {
-  background-color: #ff4444;
-  color: white;
-  transform: scale(1.1);
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
-/* Optional: gradient title */
-.gradient-text {
-  background: linear-gradient(90deg, #007bff, #6610f2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-  font-size: 2.3rem;
+.experience-img {
+  width: 100%;
+  height: 200px; /* or whatever fixed height you want */
+  object-fit: cover;
+  display: block;
 }
+/* Experience.css */
 .experience-section-bg {
-  background: linear-gradient(135deg, rgba(173, 216, 255, 0.85), rgba(204, 179, 255, 0.85));
-  backdrop-filter: blur(12px);
-  min-height: 100vh;
-  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #f0f4f8, #e6f0ff);
+  position: relative;
+  z-index: 1;
 }

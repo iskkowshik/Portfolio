@@ -1,86 +1,91 @@
-/* === Glass Card for Skills === */
-.skill-card {
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-radius: 1rem;
-  border: 1px solid rgba(0, 123, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-  padding: 1.5rem;
+/* Auto-Scrolling Logo Wrapper */
+.auto-scroll-wrapper {
+  overflow: hidden;
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 12px 0;
 }
 
-.skill-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 14px 28px rgba(0, 123, 255, 0.25);
-  border-color: #007bff;
+/* Logo Track */
+.scroll-track {
+  display: flex;
+  animation: scroll-left 7s linear infinite;
+  gap: 40px;
+  padding-left: 20px;
 }
 
-.skill-card h5 {
-  color: #007bff;
-  font-weight: 600;
+.scroll-track img {
+  height: 48px;
+  width: auto;
+  transition: transform 0.3s ease;
 }
 
-.card-text {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
+.scroll-track img:hover {
+  transform: scale(1.1);
 }
 
-/* === Gradient Heading === */
-.gradient-text {
-  background: linear-gradient(90deg, #007bff, #6610f2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-  font-size: 2.25rem;
-  text-align: center;
+/* Animation for Logo Movement */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-/* === Technical & Soft Skill Badges === */
+/* Skill Tag Badges */
 .tech-badge {
-  background: linear-gradient(135deg, #e0f7ff, #f3e5f5);
-  color: #333;
-  font-size: 0.85rem;
+  display: inline-block;
+  background-color: #d0e3ff;
+  color: #000000;
   font-weight: 500;
+  font-size: 0.85rem;
   padding: 6px 12px;
   border-radius: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  white-space: nowrap;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .tech-badge:hover {
-  background: linear-gradient(135deg, #d0ebff, #e3d1f3);
-  color: #000;
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+  background-color: #d0e3ff;
+  transform: scale(1.05);
 }
 
+/* Soft Skills Tag Badges */
 .soft-badge {
-  background: linear-gradient(135deg, #ffe0ec, #fff4e6);
-  color: #444;
+  background-color: #d0e3ff;
+  color: #000000;
 }
 
-.soft-badge:hover {
-  background: linear-gradient(135deg, #ffcfe0, #ffeacc);
-  color: #000;
+/* Skill Card Container (upgraded styling) */
+.skill-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e6e6e6;
 }
 
-/* === Responsive Typography Adjustments === */
-@media (max-width: 768px) {
-  .skill-card {
-    padding: 1.2rem;
-  }
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
 
-  .gradient-text {
-    font-size: 1.75rem;
-  }
+/* Optional: Section Title Gradient */
+.gradient-text {
+  background: linear-gradient(90deg, #005bea, #00c6fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  .card-title {
-    font-size: 1.1rem;
-  }
-
-  .card-text {
-    font-size: 0.95rem;
-  }
+/* Section Background Wrapper */
+.skills-section {
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  padding: 3rem 1rem;
 }
