@@ -52,6 +52,15 @@ const Home = () => {
           >
             📄 View Resume
           </a>
+          <a
+  href="https://github.com/iskkowshik"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn btn-primary btn-lg px-4 shadow-sm ms-3"
+>
+  💻 View My Work
+</a>
+
         </div>
       </div>
     </div>

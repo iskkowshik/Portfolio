@@ -87,15 +87,22 @@
 
 .modal-content-custom {
   max-width: 90%;
-  max-height: 80vh;
+  max-height: 90vh;
   animation: zoomIn 0.4s ease;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .modal-content-custom img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 90vh;
+  width: auto;
   height: auto;
+  object-fit: contain;  /* 🧠 THIS is the key to preserve full image */
+  display: block;
   border-radius: 10px;
 }
+
 
 .close-btn {
   position: absolute;

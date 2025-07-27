@@ -9,7 +9,7 @@ const projects = [
     description: `Patient Pulse – Online Doctor Appointment',
     description: Built a full-stack healthcare web application using React, Node.js, Express, and MongoDB, deployed on AWS. The platform enables users to book doctor appointments, securely log in using JWT authentication, and manage personal health records. Key features include dynamic doctor filtering, real-time notifications, and emergency medical support for rural areas. Designed with a fully responsive UI to ensure smooth user experience across all devices.,`,
     github: 'https://github.com/iskkowshik/patient-pulse.git',
-    techStack: ['react', 'nodejs', 'express', 'mongodb', 'aws', 'jwt', 'bootstrap'],
+    techStack: ['react', 'nodejs', 'express', 'mongodb', 'aws', 'bootstrap'],
     images: [
       '/Screenshot 2024-10-04 102248.png',
       '/Screenshot 2024-10-04 102355.png',
@@ -22,7 +22,7 @@ const projects = [
     description: `AI-Based College ID Validator',
     description: Developed a Dockerized image-processing microservice to verify the authenticity of college ID cards using a ResNet-based deep learning model and OCR-driven rule logic. The system detects template mismatches, missing fields, and image forgeries with over 95% accuracy. Built with FastAPI, PyTorch, and OpenCV, it includes robust REST APIs for validation, health checks, and versioning. The solution runs securely offline in containerized environments and is tested against 50+ real and fake ID scenarios, enhancing reliability and scalability in real-world deployments.,`,
     github: 'https://github.com/iskkowshik/AI-ID-Validator.git',
-    techStack: ['python', 'pytorch', 'opencv', 'fastapi', 'docker', 'rest'],
+    techStack: ['python', 'pytorch', 'opencv', 'fastapi', 'docker'],
     images: [
       '/Screenshot 2025-05-26 172041.png',
       '/Screenshot 2025-05-26 172050.png',
@@ -67,11 +67,13 @@ const Projects = () => {
 
             {/* Tech stack icons */}
             <div className="tech-icons mb-3" data-aos="fade-right">
-              {project.techStack.map((tech, i) => (
-                <span key={i} className="tech-icon" title={tech}>
-                  <i className={`${techIconMap[tech]} colored`}></i>
-                </span>
-              ))}
+             {project.techStack.map((tech, i) => (
+  <div key={i} className="tech-icon-with-label text-center me-3" title={tech}>
+    <i className={`${techIconMap[tech]} colored fs-3`}></i>
+    <div className="tech-label mt-1 small">{tech.toUpperCase()}</div>
+  </div>
+))}
+
             </div>
 
             {/* GitHub button */}

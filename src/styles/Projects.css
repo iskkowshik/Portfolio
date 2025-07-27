@@ -84,10 +84,13 @@
 }
 
 .modal-content-custom img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 90vh;
+  width: auto;
   height: auto;
   display: block;
   border-radius: 10px;
+  object-fit: contain;
 }
 
 .close-btn {
@@ -133,4 +136,15 @@
 .tech-icon i:hover {
   transform: scale(1.2);
   color: #007bff;
+}
+.tech-icon-with-label {
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+}
+
+.tech-label {
+  font-size: 0.75rem;
+  color: #555;
+  font-weight: 500;
 }
